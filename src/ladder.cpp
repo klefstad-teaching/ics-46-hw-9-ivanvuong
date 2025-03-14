@@ -113,6 +113,7 @@ void print_word_ladder(const vector<string>& ladder)
     }
     else
     {
+        cout << "Word ladder found: ";
         for (auto word : ladder)
         {
             cout << word << ' ';
