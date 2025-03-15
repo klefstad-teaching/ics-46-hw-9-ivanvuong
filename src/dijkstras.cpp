@@ -6,8 +6,8 @@ vector<int> dijkstra_shortest_path(const Graph& G, int source, vector<int>& prev
     std::vector<int> distances;
     std::vector<bool> visited; 
 
-    distances.assign(n, INF);
-    previous.resize(n, -1);
+    distances.resize(n, INF);
+    previous.assign(n, -1);
     visited.resize(n, false);
 
     priority_queue<Edge> pq;
